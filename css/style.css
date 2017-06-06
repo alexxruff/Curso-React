@@ -7460,15 +7460,37 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-us{
   background-color: #ffffff; 
   color: #484848 !important;
-  height: 500px;
+  height: 650px;
+}
+.f-curso{
+  width: 100%;
+  background-color: #222;
 }
 .fecha-curso{
-  background-color: #f3f3f3;
   padding: 20px 0px;
-  width: 100%;
   text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  color: #ffffff;
+}
+.fecha-curso span{
+  color: #f36426;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.footer-fecha{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.datos-curso{
+  font-size: 20px;
   font-weight: 600;
-  font-size: 40px;
+}
+.i-d{
+  margin-right: 5px;
+  color: #f36426; 
 }
 .nosotros-t{
   font-family: 'Source Sans Pro', sans-serif;
@@ -7503,6 +7525,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .profesores .cargo-p{
   margin-bottom: 0px;
+  width: 80%;
+  height: 120px;
 }
 .profesores .cargo-g{
   color: #06badd;
@@ -7540,11 +7564,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 3rem 0px 0px 5rem;
 }
 .slide-p a{
+  border-radius: 0px 0px 10px 10px;
   text-decoration: none;
-  /*border: 1px solid red;*/
+  border-bottom: 5px solid #924220;
   padding: 2rem;
   background-color: #f36426!important;
   color: #ffffff;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -7613,7 +7639,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 95%;
   display: flex;
   align-items: center;
-  /*justify-content: space-between;*/
+  justify-content: center;
+  height: 60px;
+  padding: 0 5px;
 }
 .comunicacion li img{
   margin: 0px 10px; 
@@ -7624,13 +7652,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 99%;
   text-align: left;
   margin: 0;
-  padding: 0px 3px;
-  font-size: 15px;
-  font-weight: 400;
-  border: 1px solid #f3f3f3;
-  margin-bottom: 5px; 
+  margin-left: 10px; 
+  font-size: 17px;
+  font-weight: 500;
 }
-.comunicacion li p:hover{
+.comunicacion li:hover{
   border:1px solid #00d6ff;
 }
 
@@ -7855,14 +7881,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 650px;
   z-index: 10;
 
-  background: #00D6FF;
-  background: -webkit-linear-gradient(-90deg, #0DD4BB, #00D6FF);
-  background: -o-linear-gradient(-90deg, #0DD4BB, #00D6FF);
-  background: -moz-linear-gradient(-90deg, #0DD4BB, #00D6FF);
-  background: linear-gradient(-90deg, #0DD4BB, #00D6FF);
+  background-image: url(../images/hack-2.png);
+  background-size: cover;
 
   overflow: hidden;
 }
+
 #fh5co-hero .fh5co-overlay {
   position: absolute;
   top: 0;
@@ -7870,8 +7894,12 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   z-index: 9;
-  background: url('../images/react-fondo.png');
-  background-size: cover;
+  
+  background: (-90deg,rgba(0,0,0,0), black);
+  background: -webkit-linear-gradient(-90deg,rgba(0,0,0,0), black);
+  background: -o-linear-gradient(-90deg,rgba(0,0,0,0), black);
+  background: -moz-linear-gradient(-90deg,rgba(0,0,0,0), black);
+  background: linear-gradient(-90deg,rgba(0,0,0,0), black);
 }
 @media screen and (max-width: 769px) {
   #fh5co-hero {
@@ -7942,7 +7970,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #fh5co-hero .fh5co-intro .fh5co-text {
-  bottom: -8em;
+  bottom: -6em;
 }
 @media screen and (max-width: 992px) {
   #fh5co-hero .fh5co-intro .fh5co-text {
@@ -7972,8 +8000,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
 }
 #fh5co-hero .fh5co-intro p {
-  font-weight: 200 !important;
-  font-size: 22px !important;
+  font-weight: 300 !important;
+  font-size: 32px !important;
+  line-height: 34px !important;
+}
+#fh5co-hero .fh5co-intro p .precio{
+  font-weight: 500;
+}
+#fh5co-hero .fh5co-intro p .estudiante{
+  font-weight: 500;
+  color: #f36426; 
 }
 
 @media screen and (max-width: 768px) {
@@ -8858,8 +8894,8 @@ pre {
   right: 0;
   bottom: 0;
   z-index: 8;
-  background: #3b3d40;
-  opacity: .5;
+/*  background: #3b3d40;
+  opacity: .5;*/
 }
 #fh5co-footer .fh5co-footer-content {
   position: relative;
@@ -8895,7 +8931,7 @@ pre {
   margin-bottom: 20px;
 }
 #fh5co-footer a {
-  color: #9a9fa5;
+  color: #ffffff;
 }
 #fh5co-footer a:hover, #fh5co-footer a:active, #fh5co-footer a:focus {
   color: #ffffff;
