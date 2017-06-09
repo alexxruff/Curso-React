@@ -7492,6 +7492,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 5px;
   color: #f36426; 
 }
+.capaz{
+  font-size: 22px;
+  margin-top: 2rem;
+}
 .nosotros-t{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600 !important;
